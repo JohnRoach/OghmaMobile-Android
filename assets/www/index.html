@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acceleration Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        function goto(){
+            var address = document.getElementById("address").value;
+                navigator.app.loadUrl(address, { openExternal:false });
+
+        }
+
+
+    </script>
+</head>
+<body>
+<form onsubmit="javascript: goto();">
+    <input type="text" id="address" name="address" value="http://192.168.0.19:8090" />
+    <input type="submit" />
+</form>
+</body>
+</html>
